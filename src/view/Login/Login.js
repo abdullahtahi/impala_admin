@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 
 import "./Login.css"
-import { Grid, Box,Paper,TextField} from "@mui/material"
+import { Grid, Box,Paper,TextField, Button} from "@mui/material"
 export default function Login() {
     const [email, setEmail] = useState()
     const [password, setpassword] = useState()
@@ -38,8 +38,10 @@ export default function Login() {
             <Box className="password">
             <TextField  varient="outlined" label='Please Enter a password' />
             </Box>
-<Box>{emailerror}</Box>
-            
+{/* <Box>{emailerror}</Box> */}
+            <Box>
+                <Button varient="outlined" style={{marginTop:"10px",border:"1px solid green",color:"green"}}>Login</Button>
+            </Box>
             </Paper>
         </Grid>
     )
