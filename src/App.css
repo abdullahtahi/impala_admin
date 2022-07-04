@@ -12,6 +12,17 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.dataContainer{
+  transform: translateY(10px);
+  margin-left: 250px;
+  color: white;
+  padding: 10px;
+}
+a{
+  display: block;
+  color: #000;
+
+}
 
 .App-header {
   background-color: #282c34;
@@ -23,7 +34,10 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+a:hover{
+  background-color: #1f1d61;
+  color:white
+}
 .App-link {
   color: #61dafb;
 }

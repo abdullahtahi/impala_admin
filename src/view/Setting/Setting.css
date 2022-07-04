@@ -1,0 +1,13 @@
+.contactformdata{
+    padding:30px;
+    /* padding-top: 20px; */
+}
+.settingInput{
+    padding:20px;
+    
+}
+.error{
+    color:red;
+    margin-top: -22px;
+    margin-left: 22px;
+}

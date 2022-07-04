@@ -1,0 +1,17 @@
+.MuiButtonBase-root{
+    margin-top: -9px;
+}
+a{
+    text-decoration: none;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+.userhoverbtn:hover{
+    background-color: #1f1d61;
+    /* font-size: 30px; */
+    color:white;
+    display: "content";   
+}
+.hoverlinkbtn:hover{
+    background-color: #1f1d61;
+    color: white;
+}
