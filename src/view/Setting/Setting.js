@@ -44,7 +44,6 @@ export default function Setting() {
             deliveryCharge: deliveryCharge
         }
     }
-    console.log(address, email, phone, alternatePhone, deliveryCharge)
 
     return (
         <Grid className="dataContainer">

@@ -14,18 +14,26 @@ import Users from './view/Users/Users';
 import Setting from './view/Setting/Setting';
 import Login from './view/Login/Login';
 import Page404 from './view/Page404/Page404';
+import ForgetPassword from './view/ForgetPassword/ForgetPassword';
+import ChangePassword from './view/ChangePassword/ChangePassword';
 export default function App() {
   return (
     <BrowserRouter>
       {/* <Sidebar /> */}
       {/* <Header /> */}
       <Routes>
+        
+      <Route path="/" element={<Users />} />
         <Route path="/impalaadmin/customer" element={<Users />} />
         <Route path="/impalaadmin/product" element={<Product />} />
         <Route path="/impalaadmin/order" element={<Order />} />
         <Route path="/impalaadmin/earning" element={<Earning />} />
         <Route path="/impalaadmin/setting" element={<Setting />} />
         <Route path="/impalaadmin/login" element={<Login />} />
+        <Route path="/impalaadmin/forgetpassword" element={<ForgetPassword />} />
+        <Route path="/impalaadmin/changepassword" element={<ChangePassword />} />
+
+  /impalaadmin/changepassword
         <Route path="*" element ={<Page404/>}/>
       </Routes>
     </BrowserRouter>

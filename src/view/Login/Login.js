@@ -1,7 +1,8 @@
 import React,{useState} from 'react'
-
+import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import "./Login.css"
 import { Grid, Box,Paper,TextField, Button} from "@mui/material"
+import { Link } from 'react-router-dom';
 export default function Login() {
     const [email, setEmail] = useState()
     const [password, setpassword] = useState()
@@ -19,17 +20,26 @@ export default function Login() {
             setemailerror("the email is not correct")
         }
         }
-    }
+        if(name=="password"){
+            const res=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/
+            if(!res.test(value))
+            {
+                setpassworderror("Minimum eight characters, at least one uppercase letter, one lowercase letter and one number")
+            }
+    
+            }
+        }
+    
     const postlogin=()=>{
      validation();
         const postCredential={
 email:email,
-password:password
-}
+password:password}
+
     }
-    console.log(email,password)
+    
     return (
-        <Grid>
+        <Grid  className="alllogindata"style={{display:"flex"}}>
         <Paper className="loginform" md={3}elevation={3}>
             <Box>
                 <h2>Login</h2>
@@ -46,17 +56,33 @@ password:password
             <Box className="password">
             <TextField  
             style={{marginTop:"20px"}}
+            // ref='password'
+            type="password"
             onBlur={()=>validation("password",password)}
             onChange={(e)=>setpassword(e.target.value)}
-            varient="outlined" label='Please Enter a password' />
+            varient="outlined" label='Please Enter a password'
+            value={password} />
             </Box>
-{/* <Box>{emailerror}</Box> */}
+<Box style={{color:"red"}}>{passworderror}</Box>
+           
+        <Link to="/impalaadmin/forgetpassword"><Box>ForgetPassword</Box></Link>   
             <Box>
                 <Button
                 disabled={email && password ? false:true}
                 onClick={postlogin}varient="outlined" style={{marginTop:"10px",border:"1px solid green",color:"green"}}>Login</Button>
             </Box>
             </Paper>
+            <Grid className='backgroundLogin'>
+            {/* <LocalShippingIcon className='impalaadmin' style={{ color: "white",
+            margin:"0 auto",
+           
+    fontSize:" 20rem",
+    marginLeft: "237px"
+} }/> */}
+        <Box className="logintitle">Welcome To 
+        </Box>
+        <Box className="logintitle"> Impala Admin</Box>
+                    </Grid>
         </Grid>
     )
 }

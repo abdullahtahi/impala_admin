@@ -11,9 +11,10 @@ color:black
     display: block;
     transform: translateX(-126px);
     /* font-weight: 400; */
+    color: #f1f1f1;
 }
 .dropdown-content a{
 color: black;
-font-weight: 600;
+/* font-weight: 600; */
 padding:10px
 }

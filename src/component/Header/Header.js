@@ -26,11 +26,11 @@ export default function Header() {
             <Grid item className="dropdown">
                 <PersonIcon className="dropbtn"/>
                 <Grid className="dropdown-content">
-                    <Link to="" >Link1</Link>
+                    <Link to="" >username</Link>
                 <Divider/>
-                    <Link to="" >Link2</Link>
+                    <Link to="/impalaadmin/changepassword" >ChangePassword</Link>
                     <Divider/>
-                    <Link to="" >Link3</Link>
+                    <Link to="" >LogOut</Link>
                 </Grid>
             </Grid>
         </Grid>

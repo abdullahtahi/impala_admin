@@ -10,7 +10,6 @@ export default function Earning() {
 
   const [Search, setSearch] = useState("")
   const keys = ["id", "first_name", "last_name"]
-  console.log(data)
   const searchQuery = (val) => {
     return val.filter((item) => keys.some((key) => item[key].toString().toLowerCase().includes(Search)));
     

@@ -184,7 +184,6 @@ function EnhancedTableHead(props) {
         rowCount: PropTypes.number.isRequired
       };      
 export default function UserSearch({datasearch}) {
-    // console.log(datasearch)
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {

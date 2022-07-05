@@ -136,7 +136,6 @@ function EnhancedTableHead(props) {
         rowCount: PropTypes.number.isRequired
       };      
 export default function ProductSearch({datasearch}) {
-    console.log(datasearch)
     const [order, setOrder] = React.useState("asc");
   const [orderBy, setOrderBy] = React.useState("");
   const [selected, setSelected] = React.useState([]);

@@ -4,4 +4,134 @@
     margin-left: 10rem;
     transform: translateY(170px);
 }
+.backgroundLogin{
+/* text-align: center; */
 
+    background-color: black;
+    height: 100vh;
+    width: 49%;
+    transform: translateX(350px);
+    position: absolute;
+    right: 350px;
+}
+.logintitle{
+    color: whitesmoke;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    transform: translateY(86px);
+    font-size: 60px;
+}
+
+
+@media screen and (max-width:2560px)
+{
+    .impalaadmin{
+        transform: translateX(194px);
+    }
+    .backgroundLogin{
+        width:53%;
+    }
+
+}
+
+
+@media screen and (max-width:1440px)
+{
+    .alllogindata{
+        text-align: center;
+    }
+
+}
+@media screen and (max-width:1152px)
+{
+    .impalaadmin{
+        transform: translateX(-150px);
+    }
+    .backgroundLogin{
+        width:53%;
+    }
+
+}
+@media screen and (max-width:1001px)
+{
+    .loginform {
+        transform: translateX(-120px);
+}
+
+}
+@media screen and (max-width:1024px)
+{
+    .impalaadmin{
+        transform: translateX(-150px);
+    }
+    .backgroundLogin{
+        width:55%;
+        text-align: center;
+
+    }.logintitle{
+        margin-right: 57px;
+    }
+
+}
+
+
+@media screen and (max-width:701px)
+
+
+{
+    .impalaadmin{
+        transform: translateX(-219px);
+    }
+    .backgroundLogin{
+       
+    width: 53%;
+    height:100vh;
+    }
+    .loginform{
+        margin-left: -260px;
+        width: 186px;
+        width: 207px;
+        text-align: center;
+        transform: translateX(408px);
+        margin-top: 65px;
+        font-size: 27px;
+    
+    }
+    .logintitle{
+        font-size: 22px;
+        margin-top: 20px;
+        text-align: center;}
+    
+    .alllogindata{
+        /* display: flex; */
+        /* justify?S-content: center; */
+        text-align: center;
+    }
+  
+}
+
+
+@media screen and (max-width:700px)
+{
+    .impalaadmin{
+        transform: translateX(-150px);
+    }
+    .backgroundLogin{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:485px)
+{
+   .loginform{
+    text-align: center;
+
+   }
+   .alllogindata{
+   
+    transform: translateX(-59px)
+   }
+
+}
